@@ -1,14 +1,17 @@
 # cloud-streaming-service
-서버사이드이벤트 전송을 위한 서버 설정
-WebFlux(Netty) 기준으로 작성
-cloud-gateway-service와 동일한 방식으로 세션 체크 (게이트웨이를 통하여 로그인을 하였다면 별도의 인증 없이 사용 가능)
+- 서버사이드이벤트 전송을 위한 서버 설정
+- WebFlux(Netty) 기준으로 작성
+- cloud-gateway-service와 동일한 방식으로 세션 체크 (게이트웨이를 통하여 로그인을 하였다면 별도의 인증 없이 사용 가능)
 
 ## Local 실행 방법 (STS 기준)
-### Run Configuration 설정
+##### Run Configuration 설정
 - Arguments 탭 -> VM 옵션에 아래와 같이 추가
--Dapp.home=app-home
--DHOSTNAME=local
--Dspring.profiles.active=local
+
+> -Dspring.profiles.active=local
+
+> -Dapp.home=app-home
+
+> -DHOSTNAME=local
 
 - 클릭 RUN
 
