@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        maven {
+            url('http://70.121.224.52:8081/repository/maven-central/')
+            allowInsecureProtocol true
+        }
+        jcenter {
+            url 'http://70.121.224.52:8081/repository/jcenter/'
+            allowInsecureProtocol true
+        }
+        maven {
+            url 'http://70.121.224.52:8081/repository/gradle-plugin/'
+            allowInsecureProtocol true
+        }
+        //mavenCentral()
+    }
+	plugins {
+		id "org.springframework.boot" version "2.7.8"
+	}
+}
+rootProject.name = 'cloud-streaming-service'
